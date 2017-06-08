@@ -1,0 +1,73 @@
+<!-- startpage.pstl -->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>{SURVEYNAME}</title>
+<meta name="generator" content="LimeSurvey http://www.limesurvey.org" />
+
+<!-- The following line includes jquery-ui.css or jquery-ui-custom.css from template dir, template.css and needed specific css file for survey -->
+{TEMPLATECSS}
+
+<!-- The following line includes jquery.js, jquery-ui.js, survey_runtime.js , template.js and needed specific js file for survey -->
+{TEMPLATEJS}
+<link rel="apple-touch-icon" sizes="57x57" href="{TEMPLATEURL}files/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="{TEMPLATEURL}files/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="{TEMPLATEURL}files/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="{TEMPLATEURL}files/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="{TEMPLATEURL}files/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="{TEMPLATEURL}files/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="{TEMPLATEURL}files/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="{TEMPLATEURL}files/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{TEMPLATEURL}files/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="{TEMPLATEURL}files/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{TEMPLATEURL}files/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="{TEMPLATEURL}files/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{TEMPLATEURL}files/favicon/favicon-16x16.png">
+<link rel="manifest" href="{TEMPLATEURL}files/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="{TEMPLATEURL}files/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+{GOOGLE_ANALYTICS_JAVASCRIPT}
+</head>
+<body class="default lang-{SURVEYLANGUAGE} {SURVEYFORMAT}">
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="topsurveymenubar">
+        <div class="navbar-header col-xs-12 col-sm-6 col-lg-8">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand col-xs-10 col-sm-12" >{SURVEYNAME}</span>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse col-xs-12">
+            <ul class="nav navbar-nav">
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {SAVE_LINKS}
+                {CLEARALL_LINKS}
+                {QUESTION_INDEX_MENU}
+            </ul>
+        </div><!--/.nav-collapse -->
+    </nav>
+
+
+    <!-- Top container -->
+    <div id="topContainer" class="jumbotron">
+        <div class="container">
+            {PERCENTCOMPLETE}
+            {LANGUAGECHANGER}
+        </div>
+    </div>
+
+    <div class="outerframe container" id="outerframeContainer">
+
+        <div class="row" id="main-row">
+
+            <div class='col-xs-12' id="yii-flash-message">
+                {FLASHMESSAGE}
+            </div>
+
+            <div class="col-sm-12 col-centered" id="main-col">
+<!-- end of startpage.pstl -->
